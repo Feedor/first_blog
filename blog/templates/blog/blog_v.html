@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -10,7 +10,7 @@
 
 <body>
     <h1><em>Fedor's blog</em></h1>
-    <h2>let's start</h2>
+    <!--<h2>let's start</h2>
     <p>Hi Fedy!</p>
     <p>It <strong>works</strong>!</p>
     <a href="http://testblogfedor.pythonanywhere.com/">go to PythonAnywhere</a>
@@ -39,7 +39,15 @@
             <strong>Publicate date:</strong> 03.07.2019 20:35
         </p>
         
+    </div>-->
+    <!--{{posts}}-->
+    {% for e in posts %}
+    <div>
+        <h2>{{e.title}}</h2>
+        <p>{{e.text|linebreaksbr}}</p>
+        <p>{{e.pulikate_date}}</p>
     </div>
+    {% endfor %}
 </body>
 
 </html>

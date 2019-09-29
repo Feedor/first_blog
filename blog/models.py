@@ -14,3 +14,5 @@ class Post(models.Model):
     def publ(self):
         self.pulikate_date = timezone.now()
         self.save()
+    def __str__(self):
+        return self.title

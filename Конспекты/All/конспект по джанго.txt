@@ -1,0 +1,8 @@
+Запустить виртуальное окружение в Windows:
+	my_venv\Scripts\activate
+
+ Запускаем веб-сервер:
+	python manage.py runserver
+
+Обновить pip
+	python -m pip install --upgrade pip
