@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+    font: 25px Mistral;
+    background-color: #87CEFA;
+}
+
+h1 {
+    color: #800080;
+}
+
+.post {
+    width: 45%;
+    margin: 50px auto;
+    background-color: #5F9EA0;
+    padding: 10px 30px;
+    border: 8px inset #4B0082;
+    border-radius: 25px;
+    /*box-shadow: сдвиг по X, сдвиг по Y, размыие, цвет;*/
+    box-shadow: 10px 13px 10px #000000;
+}
+
+.text {
+    color: darkblue;
+}
+
+.date {
+    text-align: right;
+    color: darkmagenta;
+}
+
+.title {
+    font: 25px Monotype Corsiva;
+    color: #006400;
+}

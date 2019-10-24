@@ -1,53 +1,16 @@
-﻿<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Fedor's blog</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="blog_v.css" type="text/css">
-
-</head>
-
-<body>
-    <h1><em>Fedor's blog</em></h1>
-    <!--<h2>let's start</h2>
-    <p>Hi Fedy!</p>
-    <p>It <strong>works</strong>!</p>
-    <a href="http://testblogfedor.pythonanywhere.com/">go to PythonAnywhere</a>
-    <div class="list posts">
-        <ul>
-            <li>post 1</li>
-            <li><em>post 2</em></li>
-        </ul>
-    </div>
-    <h3>Картинка!</h3>
-    <img src="images/s1200.png">
-    <div class="post">
-        <h2>
-            <a href="">Post one</a>
-        </h2>
-        <p>
-            Предвижу всё: вас оскорбит<br />
-            Печальной тайны объясненье.<br />
-            Какое горькое презренье<br />
-            Ваш гордый взгляд изобразит!<br />
-            Чего хочу? с какою целью<br />
-            Открою душу вам свою?<br />
-            Какому злобному...<br />
-        </p>
-        <p class="date">
-            <strong>Publicate date:</strong> 03.07.2019 20:35
-        </p>
-        
-    </div>-->
-    <!--{{posts}}-->
-    {% for e in posts %}
-    <div>
+﻿{% extends "blog/base.html" %}
+{% block content %}
+{% for e in posts %}
+<div class="post">
+    <div class="title">
         <h2>{{e.title}}</h2>
+    </div>
+    <div class="text">
         <p>{{e.text|linebreaksbr}}</p>
+    </div>
+    <div class="date">
         <p>{{e.pulikate_date}}</p>
     </div>
-    {% endfor %}
-</body>
-
-</html>
+</div>
+{% endfor %}
+{% endblock %}
