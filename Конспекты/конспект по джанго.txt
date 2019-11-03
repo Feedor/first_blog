@@ -6,3 +6,6 @@
 
 Обновить pip
 	python -m pip install --upgrade pip
+
+Обновить статические файлы:
+	python manage.py collectstatic

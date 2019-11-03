@@ -2,13 +2,19 @@ body {
     text-align: center;
     font: 25px Mistral;
     background-color: #87CEFA;
+    margin: 0;
 }
 
-h1 {
+.header {
     color: #800080;
+    background-color:azure;
+    width: 100%;
+    padding: 30px 10px;
+    margin: 0;
+    border-bottom: 3px solid black;
 }
 
-.post {
+.postt {
     width: 45%;
     margin: 50px auto;
     background-color: #5F9EA0;
@@ -30,5 +36,9 @@ h1 {
 
 .title {
     font: 25px Monotype Corsiva;
-    color: #006400;
+    text-decoration: none;
+}
+.title h1 a {
+    text-decoration: none;
+    color: #4B0082;
 }
